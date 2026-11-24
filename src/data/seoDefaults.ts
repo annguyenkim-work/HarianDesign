@@ -1,4 +1,5 @@
 import { AppLanguage, SeoSectionConfig, SeoSectionKey } from '../types';
+import { withBase } from '../utils/assetUrl';
 
 export const SEO_SECTION_ORDER: SeoSectionKey[] = [
   'home',
@@ -124,31 +125,31 @@ export const SEO_IMAGE_PRESETS: Array<{
   labelJa: string;
 }> = [
   {
-    path: '/src/assets/images/hero_mineral_living_1794973824082.jpg',
+    path: withBase('/src/assets/images/hero_mineral_living_1794973824082.jpg'),
     labelVi: 'Không gian sống khoáng chất Kirara (Hero)',
     labelEn: 'Kirara Mineral Living Space (Hero)',
     labelJa: 'キララ自然鉱物リビング空間 (メイン)',
   },
   {
-    path: '/src/assets/images/consulting_architecture_1794973825429.jpg',
+    path: withBase('/src/assets/images/consulting_architecture_1794973825429.jpg'),
     labelVi: 'Tư vấn doanh nghiệp & Kiến trúc tối giản',
     labelEn: 'Corporate & Minimalist Architecture Advisory',
     labelJa: '企業コンサルティング・ミニマル建築',
   },
   {
-    path: '/src/assets/images/product_kirara_cream_1794973824722.jpg',
+    path: withBase('/src/assets/images/product_kirara_cream_1794973824722.jpg'),
     labelVi: 'Sản phẩm sơn bả khoáng chất KIRARA Cream',
     labelEn: 'KIRARA Cream Natural Wall Material',
     labelJa: 'KIRARA Cream 自然健康壁材',
   },
   {
-    path: '/src/assets/images/product_kirara_liquid_1794973825163.jpg',
+    path: withBase('/src/assets/images/product_kirara_liquid_1794973825163.jpg'),
     labelVi: 'Dung dịch khoáng chất KIRARA Liquid & G.K.O',
     labelEn: 'KIRARA Liquid & G.K.O Air Care',
     labelJa: 'KIRARA Liquid・G.K.O ミネラル溶液',
   },
   {
-    path: '/src/assets/images/product_stone_bathroom_1794973826284.jpg',
+    path: withBase('/src/assets/images/product_stone_bathroom_1794973826284.jpg'),
     labelVi: 'Đá khoáng tự nhiên Kirara Stone',
     labelEn: 'Kirara Natural Mineral Stone',
     labelJa: 'キララストーン 天然鉱石',
@@ -159,7 +160,7 @@ export const INITIAL_SEO_SETTINGS: SeoSectionConfig[] = [
   {
     section: 'home',
     ogType: 'website',
-    ogImage: '/src/assets/images/hero_mineral_living_1794973824082.jpg',
+    ogImage: withBase('/src/assets/images/hero_mineral_living_1794973824082.jpg'),
     ogSiteName: 'Harian Corporation Vietnam',
     twitterCard: 'summary_large_image',
     canonicalPath: '/',
@@ -194,7 +195,7 @@ export const INITIAL_SEO_SETTINGS: SeoSectionConfig[] = [
   {
     section: 'services',
     ogType: 'website',
-    ogImage: '/src/assets/images/consulting_architecture_1794973825429.jpg',
+    ogImage: withBase('/src/assets/images/consulting_architecture_1794973825429.jpg'),
     ogSiteName: 'Harian Corporation Vietnam',
     twitterCard: 'summary_large_image',
     canonicalPath: '/#dich-vu',
@@ -228,7 +229,7 @@ export const INITIAL_SEO_SETTINGS: SeoSectionConfig[] = [
   {
     section: 'products',
     ogType: 'product',
-    ogImage: '/src/assets/images/product_kirara_cream_1794973824722.jpg',
+    ogImage: withBase('/src/assets/images/product_kirara_cream_1794973824722.jpg'),
     ogSiteName: 'Harian Corporation Vietnam',
     twitterCard: 'summary_large_image',
     canonicalPath: '/#san-pham',
@@ -262,7 +263,7 @@ export const INITIAL_SEO_SETTINGS: SeoSectionConfig[] = [
   {
     section: 'news',
     ogType: 'article',
-    ogImage: '/src/assets/images/consulting_architecture_1794973825429.jpg',
+    ogImage: withBase('/src/assets/images/consulting_architecture_1794973825429.jpg'),
     ogSiteName: 'Harian Corporation Vietnam',
     twitterCard: 'summary_large_image',
     canonicalPath: '/#tin-tuc',
@@ -296,7 +297,7 @@ export const INITIAL_SEO_SETTINGS: SeoSectionConfig[] = [
   {
     section: 'careers',
     ogType: 'website',
-    ogImage: '/src/assets/images/hero_mineral_living_1794973824082.jpg',
+    ogImage: withBase('/src/assets/images/hero_mineral_living_1794973824082.jpg'),
     ogSiteName: 'Harian Corporation Vietnam',
     twitterCard: 'summary_large_image',
     canonicalPath: '/#tuyen-dung',
@@ -330,7 +331,7 @@ export const INITIAL_SEO_SETTINGS: SeoSectionConfig[] = [
   {
     section: 'contact',
     ogType: 'website',
-    ogImage: '/src/assets/images/consulting_architecture_1794973825429.jpg',
+    ogImage: withBase('/src/assets/images/consulting_architecture_1794973825429.jpg'),
     ogSiteName: 'Harian Corporation Vietnam',
     twitterCard: 'summary_large_image',
     canonicalPath: '/#lien-he',

@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, Check } from 'lucide-react';
 import { CONSULTING_SERVICES } from '../data/catalog';
 import { useLanguage } from '../i18n/LanguageContext';
 import { SERVICES_EN, SERVICES_JA, UI_COPY } from '../i18n/translations';
+import { withBase } from '../utils/assetUrl';
 import { SliderMediaItem, ZoomableImageSlider } from './ZoomableImageSlider';
 
 interface ServicesSectionProps {
@@ -14,10 +15,10 @@ interface ServicesSectionProps {
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 const INTRO_SLIDE_SOURCES = [
-  '/src/assets/images/consulting_architecture_1794973825429.jpg',
-  '/src/assets/images/intro_japan_vietnam_team_1795521570584.jpg',
-  '/src/assets/images/intro_danang_studio_1795521570686.jpg',
-  '/src/assets/images/product_stone_bathroom_1794973826284.jpg',
+  withBase('/src/assets/images/consulting_architecture_1794973825429.jpg'),
+  withBase('/src/assets/images/intro_japan_vietnam_team_1795521570584.jpg'),
+  withBase('/src/assets/images/intro_danang_studio_1795521570686.jpg'),
+  withBase('/src/assets/images/product_stone_bathroom_1794973826284.jpg'),
 ];
 
 export function ServicesSection({

@@ -1,19 +1,20 @@
 import { ConsultingService, KiraraColorSwatch, ProductItem } from '../types';
+import { withBase } from '../utils/assetUrl';
 
 export const PRODUCT_IMAGES: Record<ProductItem['imageKey'], string> = {
-  kirara_cream: '/src/assets/images/product_kirara_cream_1794973824722.jpg',
-  kirara_liquid: '/src/assets/images/product_kirara_liquid_1794973825163.jpg',
-  gko: '/src/assets/images/product_kirara_liquid_1794973825163.jpg',
-  donan: '/src/assets/images/product_kirara_cream_1794973824722.jpg',
-  kirara_stone: '/src/assets/images/product_stone_bathroom_1794973826284.jpg',
+  kirara_cream: withBase('/src/assets/images/product_kirara_cream_1794973824722.jpg'),
+  kirara_liquid: withBase('/src/assets/images/product_kirara_liquid_1794973825163.jpg'),
+  gko: withBase('/src/assets/images/product_kirara_liquid_1794973825163.jpg'),
+  donan: withBase('/src/assets/images/product_kirara_cream_1794973824722.jpg'),
+  kirara_stone: withBase('/src/assets/images/product_stone_bathroom_1794973826284.jpg'),
 };
 
 export const ARTICLE_IMAGES = {
-  hero_living: '/src/assets/images/hero_mineral_living_1794973824082.jpg',
-  consulting: '/src/assets/images/consulting_architecture_1794973825429.jpg',
-  kirara_cream: '/src/assets/images/product_kirara_cream_1794973824722.jpg',
-  kirara_liquid: '/src/assets/images/product_kirara_liquid_1794973825163.jpg',
-  bathroom: '/src/assets/images/product_stone_bathroom_1794973826284.jpg',
+  hero_living: withBase('/src/assets/images/hero_mineral_living_1794973824082.jpg'),
+  consulting: withBase('/src/assets/images/consulting_architecture_1794973825429.jpg'),
+  kirara_cream: withBase('/src/assets/images/product_kirara_cream_1794973824722.jpg'),
+  kirara_liquid: withBase('/src/assets/images/product_kirara_liquid_1794973825163.jpg'),
+  bathroom: withBase('/src/assets/images/product_stone_bathroom_1794973826284.jpg'),
 };
 
 export const PRODUCTS: ProductItem[] = [

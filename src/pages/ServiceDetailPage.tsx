@@ -6,6 +6,7 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { SERVICES_EN, SERVICES_JA } from '../i18n/translations';
 import { ConsultingService, ConsultationRequest } from '../types';
 import { ImageWithFallback } from '../components/ImageWithFallback';
+import { withBase } from '../utils/assetUrl';
 
 interface ServiceDetailPageProps {
   service: ConsultingService;
@@ -226,8 +227,8 @@ export function ServiceDetailPage({
               <ImageWithFallback
                 src={
                   service.category === 'Tư vấn doanh nghiệp'
-                    ? '/src/assets/images/consulting_architecture_1794973825429.jpg'
-                    : '/src/assets/images/hero_mineral_living_1794973824082.jpg'
+                    ? withBase('/src/assets/images/consulting_architecture_1794973825429.jpg')
+                    : withBase('/src/assets/images/hero_mineral_living_1794973824082.jpg')
                 }
                 alt={title}
                 className="w-full h-full object-cover"

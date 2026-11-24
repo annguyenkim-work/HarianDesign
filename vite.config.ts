@@ -5,7 +5,11 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
+  // Project Pages site lives at https://<user>.github.io/HarianDesign/
+  const base = process.env.GITHUB_PAGES === 'true' ? '/HarianDesign/' : '/';
+
   return {
+    base,
     plugins: [
       react(),
       tailwindcss(),

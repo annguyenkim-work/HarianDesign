@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { SERVICES_EN, SERVICES_JA, UI_COPY } from '../i18n/translations';
+import { withBase } from '../utils/assetUrl';
 import { SliderMediaItem, ZoomableImageSlider } from './ZoomableImageSlider';
 
 interface HeroSectionProps {
@@ -11,10 +12,10 @@ interface HeroSectionProps {
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 const HERO_SLIDE_SOURCES = [
-  '/src/assets/images/hero_mineral_living_1794973824082.jpg',
-  '/src/assets/images/hero_kirara_office_1795521570127.jpg',
-  '/src/assets/images/hero_yonaguni_coral_1795521569741.jpg',
-  '/src/assets/images/product_kirara_cream_1794973824722.jpg',
+  withBase('/src/assets/images/hero_mineral_living_1794973824082.jpg'),
+  withBase('/src/assets/images/hero_kirara_office_1795521570127.jpg'),
+  withBase('/src/assets/images/hero_yonaguni_coral_1795521569741.jpg'),
+  withBase('/src/assets/images/product_kirara_cream_1794973824722.jpg'),
 ];
 
 export function HeroSection({ onOpenBooking }: HeroSectionProps) {
