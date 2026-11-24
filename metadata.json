@@ -1,0 +1,6 @@
+{
+  "name": "Harian Vietnam — Giải pháp Không khí Kirara & Tư vấn Doanh nghiệp",
+  "description": "Website chính thức giới thiệu dịch vụ tư vấn doanh nghiệp Nhật - Việt, sản phẩm khoáng chất tự nhiên Kirara, hệ thống quản lý tin tức và cổng tuyển dụng chuyên nghiệp của Harian Corporation Vietnam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
